@@ -18,7 +18,6 @@ clear
 printf "\033[0;92m"
 figlet "`cat $PREFIX/bin/owner.db`"
 printf "\033[0m"
-cd /sdcard/
 }
 login_system(){
 trap ' ' 2 15 20
