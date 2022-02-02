@@ -3,6 +3,8 @@
 setup_system(){
 	trap ' ' 2 15 20
 	clear
+	printf "\033[0;92m"
+	figlet "`cat $PREFIX/bin/owner.db`"
 	read -p "`printf \"\033[0;96m ~ \033[0;97m\$ Setup Security Name: \"`"  name
 	read -p "`printf \"\033[0;96m ~ \033[0;97m\$ Setup Password: \"`"  password
 	echo "$name">$PREFIX/bin/owner.db
@@ -22,7 +24,7 @@ login_system(){
 trap ' ' 2 15 20
 clear
 printf "\033[0;92m"
-figlet "REALME"
+figlet "`cat $PREFIX/bin/owner.db`"
 read -p "`printf \"\033[0;96m ~ \033[0;97m\$ Enter Password: \"`" passw
 if [ "$passw" = "`cat $PREFIX/bin/passw.db`" ]
 then
