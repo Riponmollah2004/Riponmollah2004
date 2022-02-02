@@ -41,7 +41,7 @@ if [ -f "$FILE" ]; then
 else
     setup_system
 fi
-
+cd /sdcard
 FILE="$PREFIX/tmp/login"
 if [ -f "$FILE" ]; then
     done_login
