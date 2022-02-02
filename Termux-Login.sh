@@ -4,7 +4,7 @@ setup_system(){
 	trap ' ' 2 15 20
 	clear
 	printf "\033[0;92m"
-	figlet "`cat $PREFIX/bin/owner.db`"
+	figlet "Salahdin1337"
 	read -p "`printf \"\033[0;96m ~ \033[0;97m\$ Setup Security Name: \"`"  name
 	read -p "`printf \"\033[0;96m ~ \033[0;97m\$ Setup Password: \"`"  password
 	echo "$name">$PREFIX/bin/owner.db
