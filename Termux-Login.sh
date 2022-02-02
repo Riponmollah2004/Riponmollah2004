@@ -10,7 +10,7 @@ setup_system(){
 	echo "$name">$PREFIX/bin/owner.db
 	echo "$password">$PREFIX/bin/passw.db
 	clear
-	login_system
+	done_login
 	trap - 2 15 20
 }
 done_login(){
